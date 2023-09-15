@@ -199,14 +199,14 @@ header {
   align-items: center;
   gap: 20px;
   padding: 30px;
+  padding-bottom: 10px;
 }
 
 .swiper-slide {
-  transition: transform 0.3s ease-in-out;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  height: 450px !important;
+  height: 500px !important;
 }
 
 .slider-product:hover {
@@ -217,7 +217,7 @@ header {
 
 .slider-product:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .slider {
@@ -243,15 +243,21 @@ header {
   align-items: center;
   border-top: 1px solid rgb(182, 179, 179);
   border-bottom: 1px solid rgb(182, 179, 179);
-  padding: 10px 0;
+  /* padding: 10px 0; */
   gap: 10px;
 }
+
 .swiper-slide .price-container .price {
   color: var(--primary-color);
+  font-size: 12px;
 }
 
 .swiper-slide .price-container .price-txt {
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.swiper-slide .price-container p {
+  /* font-size: 20px; */
 }
 
 .swiper-button-next::after {
@@ -263,6 +269,28 @@ header {
 }
 .swiper-button-prev::after {
   display: none;
+}
+
+.add-cart {
+  display: none;
+  background: black;
+  color: white;
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-cart img {
+  height: 24px;
+  width: 24px;
+}
+
+.show {
+  display: flex;
 }
 
 /* Research certified */
