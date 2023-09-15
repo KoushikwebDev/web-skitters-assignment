@@ -64,8 +64,6 @@ header {
 
 .cart {
   margin-left: 20px;
-
-  /* height: 40px; */
   padding-left: 80px;
   background-color: var(--primary-color);
   display: flex;
@@ -90,9 +88,6 @@ header {
 }
 .hero-content {
   margin-left: 150px;
-  /* height: 400px;
-  width: 400px; */
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -141,7 +136,6 @@ header {
 
 .product-section {
   padding: 30px 150px;
-  /* height: 500px; */
 }
 .product-head {
   display: flex;
@@ -190,48 +184,45 @@ header {
 
 .swiper {
   width: 100%;
-  /* margin-top: 100px !important; */
-  height: 350px;
-
-  margin-bottom: 100px;
 }
+
 .slider {
-  /* padding: 0 100px; */
-  /* margin: 0 50px; */
-  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.swiper-wrapper {
-  margin: 0 100px;
-  /* height: 1000px; */
-}
 .slider-product {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 30px;
 }
 
 .swiper-slide {
   transition: transform 0.3s ease-in-out;
-  position: relative;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 450px !important;
 }
 
-.swiper-slide:hover {
-  transform: scale(1.1);
+.slider-product:hover {
   position: relative;
   z-index: 2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.swiper-slide:hover .slider-product {
+.slider-product:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
 .slider {
   overflow: visible;
+  padding: 0 100px;
 }
 
 .swiper-slide img {
@@ -250,8 +241,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid rgb(182, 179, 179);
+  border-bottom: 1px solid rgb(182, 179, 179);
   padding: 10px 0;
   gap: 10px;
 }
@@ -268,7 +259,7 @@ header {
 }
 
 .swiper-button-prev {
-  margin-left: 40px;
+  position: absolute !important;
 }
 .swiper-button-prev::after {
   display: none;
@@ -369,7 +360,6 @@ header {
 .latest-research-container .left .left-btn {
   margin-top: 20px;
   background-color: black;
-  /* width: 200px; */
   width: fit-content;
   color: white;
   padding: 10px 10px;
@@ -496,11 +486,9 @@ header {
 
 .footer-middle-details {
   background-color: #000000;
-  /* height: 500px; */
   padding: 60px 150px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   gap: 30px;
 }
 
