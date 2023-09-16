@@ -178,6 +178,7 @@ header {
 
 .product-category p {
   font-size: 13px;
+  cursor: pointer;
 }
 
 .cat-seperator {
