@@ -38,3 +38,29 @@ slides.forEach((slide) => {
     slide.querySelector(".add-cart").classList.remove("show");
   });
 });
+
+// active class
+
+const links = document.querySelectorAll(".links a");
+const sections = document.querySelectorAll("section");
+
+function setActiveLink() {
+  const scrollPosition = window.scrollY;
+
+  sections.forEach((section, index) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (
+      scrollPosition >= sectionTop &&
+      scrollPosition < sectionTop + sectionHeight
+    ) {
+      links.forEach((link) => link.classList.remove("active"));
+      links[index].classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", setActiveLink);
+
+setActiveLink();
