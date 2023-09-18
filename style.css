@@ -138,6 +138,24 @@ header {
   font-size: 20px;
 }
 
+.shop-button {
+  background-color: #dca827;
+  width: 150px;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.shop-button .arrow {
+  width: 30px;
+}
+
 /* product section */
 
 .product-section {
